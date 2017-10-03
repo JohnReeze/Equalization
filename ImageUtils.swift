@@ -86,6 +86,7 @@ public struct RGBAImage {
         imageContext.draw(cgImage, in: CGRect(origin: .zero, size: image.size))
         pixels = UnsafeMutableBufferPointer<Pixel>(start: imageData, count: width * height)
         
+        //one channel equalization
         for _ in 0...255 {
             rBr.append(0.0)
             gBr.append(0.0)
@@ -109,9 +110,9 @@ public struct RGBAImage {
             gBr[i] = gBr[i-1] + gBr[i];
             bBr[i] = bBr[i-1] + bBr[i];
         }
-        
     }
     
+    //calculation of image brightness graph
     public mutating func countBrightness() {
         for _ in 0...255 {
             rBr.append(0.0)

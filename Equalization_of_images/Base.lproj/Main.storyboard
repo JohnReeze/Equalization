@@ -50,11 +50,15 @@
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="SEU-ou-sjk" secondAttribute="trailing" id="3nU-Gy-3ym"/>
                                             <constraint firstAttribute="bottom" secondItem="SEU-ou-sjk" secondAttribute="bottom" id="DuO-bA-Jw9"/>
+                                            <constraint firstItem="SEU-ou-sjk" firstAttribute="leading" secondItem="z6h-Q7-cg6" secondAttribute="leading" id="Tnc-jp-Rdn"/>
                                             <constraint firstItem="SEU-ou-sjk" firstAttribute="leading" secondItem="z6h-Q7-cg6" secondAttribute="leading" id="eMF-VQ-ox3"/>
                                             <constraint firstItem="SEU-ou-sjk" firstAttribute="top" secondItem="z6h-Q7-cg6" secondAttribute="top" id="eew-8Y-Kbv"/>
+                                            <constraint firstItem="SEU-ou-sjk" firstAttribute="top" secondItem="z6h-Q7-cg6" secondAttribute="top" id="okb-GY-HZi"/>
+                                            <constraint firstAttribute="trailing" secondItem="SEU-ou-sjk" secondAttribute="trailing" id="pgp-vh-oUj"/>
+                                            <constraint firstAttribute="bottom" secondItem="SEU-ou-sjk" secondAttribute="bottom" id="tGi-SW-4lQ"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="i" destination="SEU-ou-sjk" id="Fvp-xp-ha6"/>
+                                            <outlet property="mainImageView" destination="SEU-ou-sjk" id="PvP-g1-YXt"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
